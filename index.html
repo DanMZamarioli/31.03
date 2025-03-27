@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Image Gallery</title>
+</head>
+<body>
+    <h1>
+        Eu te amo, meu amor! <br>
+        1 ano de Nosotros! <br>
+        <button class="play-button" onclick="toggleSpotify()">&#9658;</button>
+    </h1>
+    <iframe
+        id="spotify-player"
+        src="https://open.spotify.com/embed/playlist/3lfAhoaYlv3l5qSqh27JYp"
+        width="300"
+        height="80"
+        frameborder="0"
+        allowtransparency="true"
+        allow="encrypted-media"
+        style="display: block; margin-top: 10px;"
+    ></iframe>
+    <div class="container">
+        <textarea class="text-box" placeholder="Digite algo..."></textarea>
+        <div class="carousel">
+            <button class="prev">&lt;</button>
+            <img id="carousel-image" src="images/imagem2.jpg" alt="Image 2">
+            <button class="next">&gt;</button>
+        </div>
+    </div>
+    <div id="hearts-container"></div> <!-- Contêiner para os corações -->
+    <script src="script.js"></script>
+</body>
+</html>
