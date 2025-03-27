@@ -51,15 +51,19 @@ h1 {
 }
 
 .text-box {
-    width: 200px;
-    height: 300px;
+    width: 300px;
+    height: auto;
     margin-right: 20px;
     padding: 10px;
     font-size: 16px;
+    font-family: "Comic Sans MS", "Cursive", sans-serif; /* Define a letra cursiva */
     border: 2px solid #ff4081;
     border-radius: 10px;
-    resize: none; /* Impede o redimensionamento */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff; /* Fundo branco para destacar o texto */
+    color: #333; /* Cor do texto */
+    text-align: justify; /* Justifica o texto */
+    line-height: 1.5; /* Espaçamento entre linhas */
 }
 
 .text-box:focus {
@@ -140,4 +144,24 @@ button:hover {
     50% {
         transform: translateX(30px); /* Move-se levemente para a direita no meio */
     }
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column; /* Organiza o vídeo e o texto em coluna */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    margin-top: 20px;
+}
+
+.video-container p {
+    color: white; /* Define a cor do texto como branca */
+    font-weight: bold; /* Define o texto como negrito */
+    text-align: center; /* Centraliza o texto */
+    margin-top: 10px; /* Adiciona espaço entre o vídeo e o texto */
+    font-size: 16px; /* Ajusta o tamanho da fonte */
+}
+
+video {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
